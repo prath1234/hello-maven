@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/prath1234/hello-maven.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean package'
